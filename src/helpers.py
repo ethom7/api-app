@@ -49,7 +49,7 @@ def transform_data_return_str(input_data, input_data_type, output_data_type):
 
 def swap_delimiters(input_data, input_delim, output_delim):
     output = ""
-    with open(input_data, 'U') as file:
+    with open(input_data, 'r') as file:
         for line in file:
             output += line.replace(input_delim, output_delim)
 
