@@ -2,7 +2,7 @@ import pytest
 from src import helpers
 
 
-def test_transform_data():
+def test_transform_data_return_str():
     # test input csv to tsv
     tsv_output = helpers.transform_data_return_str("resources/test_csv.csv", "csv", "tsv")
     csv_output = helpers.transform_data_return_str("resources/test_tsv.tsv", "tsv", "csv")
